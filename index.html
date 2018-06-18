@@ -15,11 +15,12 @@
 			</div>
 	</div>
 
+
 <section id="about" style="">
 
 		<div class="clearfix float-my-children">
 			<div class="images">
-				<img src="assets/images/me.jpg" />
+				<img src="assets/images/portBlanc/out.jpg" />
 			</div>
 			<div class="text">
 				<h3>Localisation</h3>
@@ -34,7 +35,7 @@
            <p>Au second, une autre salle de bain avec baignoire classique, deux chambres une avec deux lits de 1 personnes + deux lits tiroirs (4 vrais matelas de 90x200 m) et la seconde avec un lit de deux personnes (1.40 m)</p>
 			</div>
 			<div class="images">
-        	<img src="assets/images/me.jpg" alt="About Photo" />
+        	<img src="assets/images/portBlanc/in.jpg" alt="About Photo" />
 		  </div>
 		</div>
 
@@ -42,87 +43,70 @@
 </section>
 
     <section id="portfolio">
+
+			<div id="myModal" class="modal">
+			  <span class="close">&times;</span>
+			  <img class="modal-content" id="img01">
+			  <div id="caption"></div>
+			</div>
+
+
+
       <div class="row">
         <div class="column">
-          <a href="assets/images/portfolio-large/1.jpg" class="portfolio-img">
-            <img src="assets/images/portfolio/1.jpg"/>
-          </a>
-					<a href="assets/images/portfolio-large/2.jpg" class="portfolio-img">
-						<img src="assets/images/portfolio/2.jpg"/>
-					</a>
-					<a href="assets/images/portfolio-large/3.jpg" class="portfolio-img">
-						<img src="assets/images/portfolio/3.jpg"/>
-					</a>
-					<a href="assets/images/portfolio-large/4.jpg" class="portfolio-img">
-						<img src="assets/images/portfolio/4.jpg"/>
-					</a>
-					<a href="assets/images/portfolio-large/5.jpg" class="portfolio-img">
-						<img src="assets/images/portfolio/5.jpg"/>
-					</a>
+					<img class ="portfolio-img" id="img1" src="assets/images/portBlanc/portfolio/1.jpg" alt="assets/images/portBlanc/portfolio-large/1.jpg">
+					<img class ="portfolio-img" id="img2" src="assets/images/portBlanc/portfolio/2.jpg" alt="assets/images/portBlanc/portfolio-large/2.jpg">
+					<img class ="portfolio-img" id="img3" src="assets/images/portBlanc/portfolio/3.jpg" alt="assets/images/portBlanc/portfolio-large/3.jpg">
         </div>
         <div class="column">
-
-					<a href="assets/images/portfolio-large/3.jpg" class="portfolio-img">
-						<img src="assets/images/portfolio/3.jpg"/>
-					</a>
-					<a href="assets/images/portfolio-large/3.jpg" class="portfolio-img">
-						<img src="assets/images/portfolio/3.jpg"/>
-					</a>
-					<a href="assets/images/portfolio-large/4.jpg" class="portfolio-img">
-						<img src="assets/images/portfolio/4.jpg"/>
-					</a>
-					<a href="assets/images/portfolio-large/5.jpg" class="portfolio-img">
-						<img src="assets/images/portfolio/5.jpg"/>
-					</a>
+					<img class ="portfolio-img" id="img4" src="assets/images/portBlanc/portfolio/4.jpg" alt="assets/images/portBlanc/portfolio-large/4.jpg">
         </div>
         <div class="column">
-					<a href="assets/images/portfolio-large/4.jpg" class="portfolio-img">
-						<img src="assets/images/portfolio/4.jpg"/>
-					</a>
-					<a href="assets/images/portfolio-large/5.jpg" class="portfolio-img">
-						<img src="assets/images/portfolio/5.jpg"/>
-					</a>
-					<a href="assets/images/portfolio-large/1.jpg" class="portfolio-img">
-						<img src="assets/images/portfolio/1.jpg"/>
-					</a>
-					<a href="assets/images/portfolio-large/2.jpg" class="portfolio-img">
-						<img src="assets/images/portfolio/2.jpg"/>
-					</a>
-					<a href="assets/images/portfolio-large/1.jpg" class="portfolio-img">
-						<img src="assets/images/portfolio/1.jpg"/>
-					</a>
-					<a href="assets/images/portfolio-large/2.jpg" class="portfolio-img">
-						<img src="assets/images/portfolio/2.jpg"/>
-					</a>
-					<a href="assets/images/portfolio-large/1.jpg" class="portfolio-img">
-						<img src="assets/images/portfolio/1.jpg"/>
-					</a>
-					<a href="assets/images/portfolio-large/2.jpg" class="portfolio-img">
-						<img src="assets/images/portfolio/2.jpg"/>
-					</a>
-        </div>
-        <div class="column">
-					<a href="assets/images/portfolio-large/4.jpg" class="portfolio-img">
-						<img src="assets/images/portfolio/4.jpg"/>
-					</a>
-					<a href="assets/images/portfolio-large/5.jpg" class="portfolio-img">
-						<img src="assets/images/portfolio/5.jpg"/>
-					</a>
-					<a href="assets/images/portfolio-large/1.jpg" class="portfolio-img">
-						<img src="assets/images/portfolio/1.jpg"/>
-					</a>
-					<a href="assets/images/portfolio-large/2.jpg" class="portfolio-img">
-						<img src="assets/images/portfolio/2.jpg"/>
-					</a>
-					<a href="assets/images/portfolio-large/1.jpg" class="portfolio-img">
-						<img src="assets/images/portfolio/1.jpg"/>
-					</a>
-					<a href="assets/images/portfolio-large/2.jpg" class="portfolio-img">
-						<img src="assets/images/portfolio/2.jpg"/>
-					</a>
+					<img class ="portfolio-img" id="img5" src="assets/images/portBlanc/portfolio/5.jpg" alt="assets/images/portBlanc/portfolio-large/5.jpg">
         </div>
       </div>
     </section>
 
 </body>
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img1 = document.getElementById('img1');
+var img2 = document.getElementById('img2');
+var img3 = document.getElementById('img3');
+var img4 = document.getElementById('img4');
+var img5 = document.getElementById('img5');
+
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img1.onclick = function(){
+		modal.style.display = "block";
+		modalImg.src = this.alt;
+}
+img2.onclick = function(){
+		modal.style.display = "block";
+		modalImg.src = this.alt;
+}
+img3.onclick = function(){
+		modal.style.display = "block";
+		modalImg.src = this.alt;
+}
+img4.onclick = function(){
+		modal.style.display = "block";
+		modalImg.src = this.alt;
+}
+img5.onclick = function(){
+		modal.style.display = "block";
+		modalImg.src = this.alt;
+}
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+		modal.style.display = "none";
+}
+</script>
 </html>
