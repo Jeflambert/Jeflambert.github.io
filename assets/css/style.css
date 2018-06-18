@@ -12,13 +12,12 @@ body,html {
 	color: white;
 	padding: 0;
 	margin: 0;
-	font-family: arial, serif;
+	font-family: 'Muli', sans-serif;
 	font-size: 100%;
 }
 
  .banner_Port-Blanc {
  	height:70%;
- 	font-size:30px;
  	display: block;
  	background-image: url("../images/portBlanc/banner.png");
  	background-attachment: fixed;
@@ -28,7 +27,6 @@ body,html {
  }
 .banner_hardelot {
 	height:50%;
-	font-size:30px;
 	display: block;
 	background-image: url("../images/hardelot/banner.jpg");
 	background-attachment: fixed;
@@ -42,12 +40,13 @@ body,html {
 }
 #presentation h1{
 	text-align: center;
+	font-size: 40px;
 }
 
 #presentation .images img{
 	float:right;
-		width: 40%;
-		margin: 5%;
+		width: 30%;
+		margin: auto;
 }
 
 

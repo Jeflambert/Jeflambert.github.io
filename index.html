@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Port-blanc</title>
 	<link rel="stylesheet" href="assets/css/style.css">
+	 <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
 </head>
 <body>
   <div class="banner_Port-Blanc" >
@@ -13,7 +14,7 @@
 
 <section id="presentation">
 
-<h1>Présentation</h1>
+<h1>Port-Blanc</h1>
 <div class="images">
 	<img src="assets/images/portBlanc/out.jpg" />
 </div>
@@ -44,9 +45,11 @@
         </div>
         <div class="column">
 					<img class ="portfolio-img" id="img4" src="assets/images/portBlanc/portfolio/4.jpg" alt="assets/images/portBlanc/portfolio-large/4.jpg">
+					<img class ="portfolio-img" id="img5" src="assets/images/portBlanc/portfolio/5.jpg" alt="assets/images/portBlanc/portfolio-large/5.jpg">
         </div>
         <div class="column">
-					<img class ="portfolio-img" id="img5" src="assets/images/portBlanc/portfolio/5.jpg" alt="assets/images/portBlanc/portfolio-large/5.jpg">
+					<img class ="portfolio-img" id="img6" src="assets/images/portBlanc/portfolio/6.jpg" alt="assets/images/portBlanc/portfolio-large/6.jpg">
+					<img class ="portfolio-img" id="img7" src="assets/images/portBlanc/portfolio/7.jpg" alt="assets/images/portBlanc/portfolio-large/7.jpg">
         </div>
       </div>
     </section>
@@ -62,6 +65,8 @@ var img2 = document.getElementById('img2');
 var img3 = document.getElementById('img3');
 var img4 = document.getElementById('img4');
 var img5 = document.getElementById('img5');
+var img4 = document.getElementById('img6');
+var img5 = document.getElementById('img7');
 
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
@@ -82,6 +87,14 @@ img4.onclick = function(){
 		modalImg.src = this.alt;
 }
 img5.onclick = function(){
+		modal.style.display = "block";
+		modalImg.src = this.alt;
+}
+img6.onclick = function(){
+		modal.style.display = "block";
+		modalImg.src = this.alt;
+}
+img7.onclick = function(){
 		modal.style.display = "block";
 		modalImg.src = this.alt;
 }
