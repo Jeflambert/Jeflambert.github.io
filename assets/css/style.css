@@ -17,7 +17,7 @@ body,html {
 }
 
  .banner_Port-Blanc {
- 	height:70%;
+	height:70%;
  	display: block;
  	background-image: url("../images/portBlanc/banner.png");
  	background-attachment: fixed;
@@ -25,15 +25,16 @@ body,html {
  	background-repeat: no-repeat;
  	background-size: cover;
  }
-.banner_hardelot {
-	height:50%;
-	display: block;
-	background-image: url("../images/hardelot/banner.jpg");
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
+
+ .banner_hardelot {
+ 	height:70%;
+ 	display: block;
+ 	background-image: url("../images/hardelot/banner.jpg");
+ 	background-attachment: fixed;
+ 	background-position: center;
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+ }
 
 #presentation{
 	padding: 5%;
