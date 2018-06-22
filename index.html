@@ -8,33 +8,28 @@
 	 <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
 </head>
 <body>
-  <div class="banner_Port-Blanc" >
-	</div>
-
-
-<section id="presentation">
-
-<h1>Port-Blanc</h1>
-<div class="images">
-	<img src="assets/images/portBlanc/out.jpg" />
-</div>
-<h3>Localisation</h3>
-<p>Elle se situe sur Port-Blanc à côté du grand hôtel (l’entrée se fait sur le côté : impasse des embruns, elle se situe sur le boulevard de la mer), face à la mer, vue sur la sentinelle de Port-Blanc. Il s'agit d'une ancienne maison en pierre du pays, rénovée dans son style traditionnel avec vue mer à tous les étages. La maison a conservé son âme et son charme d'autrefois, avec son âtre, ses planchers, sa décoration. Elle se situe en front de mer, face à la sentinelle du Port-Blanc à 150 m </p>
-<h3>La maison</h3>
-<p>Au 1er, il y a une mezzanine avec un divan-lit (convenant à des enfants) et une première salle de bain avec douche. Une grande chambre avec un lit à baldaquin (1.40 m) et une baignoire balnéo.</p>
-<p>Au second, une autre salle de bain avec baignoire classique, deux chambres une avec deux lits de 1 personnes + deux lits tiroirs (4 vrais matelas de 90x200 m) et la seconde avec un lit de deux personnes (1.40 m)</p>
-
-</section>
+	<section id="banner">
+		  <div class="banner_Port-Blanc"></div>
+	</section>
+	<section id="presentation">
+		<h1>Port-Blanc</h1>
+		<div class="images">
+			<img src="assets/images/portBlanc/out.jpg" />
+		</div>
+		<h3>Localisation</h3>
+			<p>Elle se situe sur Port-Blanc à côté du grand hôtel (l’entrée se fait sur le côté : impasse des embruns, elle se situe sur le boulevard de la mer), face à la mer, vue sur la sentinelle de Port-Blanc. Il s'agit d'une ancienne maison en pierre du pays, rénovée dans son style traditionnel avec vue mer à tous les étages. La maison a conservé son âme et son charme d'autrefois, avec son âtre, ses planchers, sa décoration. Elle se situe en front de mer, face à la sentinelle du Port-Blanc à 150 m </p>
+		<h3>La maison</h3>
+			<p>Au 1er, il y a une mezzanine avec un divan-lit (convenant à des enfants) et une première salle de bain avec douche. Une grande chambre avec un lit à baldaquin (1.40 m) et une baignoire balnéo.</p>
+			<p>Au second, une autre salle de bain avec baignoire classique, deux chambres une avec deux lits de 1 personnes + deux lits tiroirs (4 vrais matelas de 90x200 m) et la seconde avec un lit de deux personnes (1.40 m)</p>
+	</section>
 
 <!--<div style="background-color:#f5f5f5;padding:0 20%;position:relative;"><iframe src="https://player.vimeo.com/video/109025619?autoplay=0&color=ffffff&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>-->
 
-
-    <section id="portfolio">
+  <section id="portfolio">
 
 			<div id="myModal" class="modal">
 			  <span class="close">&times;</span>
 			  <img class="modal-content" id="img01">
-
 			</div>
 
       <div class="row">
@@ -52,58 +47,57 @@
 					<img class ="portfolio-img" id="img7" src="assets/images/portBlanc/portfolio/7.jpg" alt="assets/images/portBlanc/portfolio-large/7.jpg">
         </div>
       </div>
-    </section>
+  </section>
 
 </body>
 <script>
-// Get the modal
-var modal = document.getElementById('myModal');
+	// Get the modal
+	var modal = document.getElementById('myModal');
+	var modalImg = document.getElementById("img01");
+	// Get the <span> element that closes the modal
+	var span = document.getElementsByClassName("close")[0];
 
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img1 = document.getElementById('img1');
-var img2 = document.getElementById('img2');
-var img3 = document.getElementById('img3');
-var img4 = document.getElementById('img4');
-var img5 = document.getElementById('img5');
-var img4 = document.getElementById('img6');
-var img5 = document.getElementById('img7');
+	// When the user clicks on <span> (x), close the modal
+	span.onclick = function() {
+			modal.style.display = "none";
+	}
 
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-img1.onclick = function(){
-		modal.style.display = "block";
-		modalImg.src = this.alt;
-}
-img2.onclick = function(){
-		modal.style.display = "block";
-		modalImg.src = this.alt;
-}
-img3.onclick = function(){
-		modal.style.display = "block";
-		modalImg.src = this.alt;
-}
-img4.onclick = function(){
-		modal.style.display = "block";
-		modalImg.src = this.alt;
-}
-img5.onclick = function(){
-		modal.style.display = "block";
-		modalImg.src = this.alt;
-}
-img6.onclick = function(){
-		modal.style.display = "block";
-		modalImg.src = this.alt;
-}
-img7.onclick = function(){
-		modal.style.display = "block";
-		modalImg.src = this.alt;
-}
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+	// Get the image and insert it inside the modal - use its "alt" text as a caption
+	var img1 = document.getElementById('img1');
+	var img2 = document.getElementById('img2');
+	var img3 = document.getElementById('img3');
+	var img4 = document.getElementById('img4');
+	var img5 = document.getElementById('img5');
+	var img6 = document.getElementById('img6');
+	var img7 = document.getElementById('img7');
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-		modal.style.display = "none";
-}
+	img1.onclick = function(){
+			modal.style.display = "block";
+			modalImg.src = this.alt;
+	}
+	img2.onclick = function(){
+			modal.style.display = "block";
+			modalImg.src = this.alt;
+	}
+	img3.onclick = function(){
+			modal.style.display = "block";
+			modalImg.src = this.alt;
+	}
+	img4.onclick = function(){
+			modal.style.display = "block";
+			modalImg.src = this.alt;
+	}
+	img5.onclick = function(){
+			modal.style.display = "block";
+			modalImg.src = this.alt;
+	}
+	img6.onclick = function(){
+			modal.style.display = "block";
+			modalImg.src = this.alt;
+	}
+	img7.onclick = function(){
+			modal.style.display = "block";
+			modalImg.src = this.alt;
+	}
 </script>
 </html>
